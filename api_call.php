@@ -1,34 +1,47 @@
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+
+use Curl\Curl;
+
 function getCityName (){
 
  global $weather;
+ global $weather_description;
+ global $weather_max_temp;
+ global $weather_min_temp;
  global $error;
 
     if (isset($_GET['city'])) {
 
-        $urlContents = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".urlencode($_GET['city'])."&appid=2294e37ea5be5250795adec34bc4bb71");
+        //initialize new curl
+        $curl = new Curl();
+        //Do a Get method to the specified API
+        $curl->get("http://api.openweathermap.org/data/2.5/forecast?q=".urlencode($_GET['city'])."&appid=2294e37ea5be5250795adec34bc4bb71");
 
-        $weatherArray = json_decode($urlContents, true);
+        //Check if the get returns an error, if not it continues to the next IF
+        if ($curl->error) {
+            echo "Could not find city - please try again.";
+            header('location: index.php');
+            die();
+        }
 
-        if ($weatherArray['cod'] == 200) {
+        //Transforms the returned array into json
+        $weatherArray = json_decode(json_encode($curl->response), true);
 
-            $weather = ucfirst($_GET['city']).":</br>"."Type of weather - ".$weatherArray['weather'][0]['description'].";<br>";
+        if ($curl->httpStatusCode == 200) {
 
-            $tempInCelcius = (int)($weatherArray['main']['temp'] - 273);
+            $weather_description = $weatherArray['list'][0]['weather'][0]['description'];
 
-            $maxTempInCelcius = (int)($weatherArray['main']['temp_max'] - 273);
+            $tempInCelcius = (int)($weatherArray['list'][0]['main']['temp'] - 273);
 
-            $minTempInCelcius = (int)($weatherArray['main']['temp_min'] - 273);
+            $maxTempInCelcius = (int)($weatherArray['list'][0]['main']['temp_max'] - 273);
 
-            $weather .= "Max Temperature for today - ".$maxTempInCelcius."&deg;C</br>";
+            $minTempInCelcius = (int)($weatherArray['list'][0]['main']['temp_min'] - 273);
 
-            $weather .= "Min Temperature for today - ".$minTempInCelcius."&deg;C</br>";
+            $weather_max_temp = $maxTempInCelcius."&deg;</br>";
 
-            $weather .= "Temperature in real time - ".$tempInCelcius."&deg;C"."</br>"."Wind speed - ".$weatherArray['wind']['speed']."m/s</br>";
-
-            $weather .= "Humidity - " .$weatherArray['main']['humidity'];
-
+            $weather_min_temp .= $minTempInCelcius."&deg;</br>";
 
 
         } else {

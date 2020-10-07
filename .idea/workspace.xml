@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42d6c6df-9973-44c8-bc78-401de49e749a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/weather-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weather-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_call.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_call.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,7 @@
       <updated>1600425044478</updated>
       <workItem from="1600425045575" duration="11462000" />
       <workItem from="1600943455111" duration="35900000" />
-      <workItem from="1602059237762" duration="1999000" />
+      <workItem from="1602059237762" duration="12415000" />
     </task>
     <servers />
   </component>
@@ -111,5 +111,9 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1354" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600958203032" />
+    <state x="-1617" y="14" width="672" height="678" key="search.everywhere.popup" timestamp="1602061617238">
+      <screen x="-1920" y="0" width="1280" height="693" />
+    </state>
+    <state x="-1617" y="14" width="672" height="678" key="search.everywhere.popup/-1920.0.1280.693/0.0.1920.1040@-1920.0.1280.693" timestamp="1602061617238" />
   </component>
 </project>

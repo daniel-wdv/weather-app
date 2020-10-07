@@ -16,24 +16,27 @@ getCityName();
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
-      
   </head>
 
 
   <body>
-  <div class="container container-2">
-      <h1>What's The Weather?</h1>
+  <div class="flex-container">
+  <div class="title-position">
+      <svg class="svg-size" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>      <h1 class="heather-title">What's The Weather?</h1>
       <label for="city">Enter the name of a city.</label>
          <form>
             <fieldset class="form-group form-align">
              <input type="text" class="form-control" name="city" id="city" placeholder="Ex: Porto, Lisboa...">
              </fieldset>
-                <button type="submit" style="background-color: black;" class="btn btn-primary">Search</button>
+                <button type="submit" style="background-color: black;" class="btn btn-style">Search</button>
         </form>
   </div>
+
       
-          <div class="container card-align" id="weather"><?php
-              
+          <div class="card-position" id="weather">
+
+              <!-- First Card -->
+              <?php
               if ($weather_description) {
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
@@ -70,6 +73,7 @@ getCityName();
                   echo "</div>";
               }
 
+              // Second Card
               if ($weather_description_2) {
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
@@ -107,6 +111,7 @@ getCityName();
                   echo "</div>";
               }
 
+              // Third Card
               if ($weather_description_3) {
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
@@ -144,6 +149,7 @@ getCityName();
                   echo "</div>";
               }
 
+              // Fourth Card
               if ($weather_description_4) {
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
@@ -181,7 +187,7 @@ getCityName();
                   echo "</div>";
               }
 
-
+              // Fifth Card
               if ($weather_description_5) {
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
@@ -220,7 +226,7 @@ getCityName();
               }
               ?>
           </div>
-
+  </div>
 
 
     <!-- jQuery first, then Bootstrap JS. -->

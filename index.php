@@ -38,12 +38,34 @@ getCityName();
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
                   echo "<h5 class='card-title'>$newDate</h5>";
-                  if($weather_description == 'few clouds'){
-                      echo "<img src='https://ssl.gstatic.com/onebox/weather/48/sunny_s_cloudy.png' class='img-style'>";
+                  switch ($weather_description) {
+                      case 'few clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/02d.png' class='img-style'>";
+                          break;
+                      case 'scattered clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/03d.png' class='img-style'>";
+                          break;
+                      case 'broken clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'overcast clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'clear sky':
+                          echo "<img src='http://openweathermap.org/img/wn/01d.png' class='img-style'>";
+                          break;
+                      case 'light rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'moderate rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'heavy intensity rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
                   }
                   echo "<p class='card-text temperature-align'>$weather_max_temp</p>";
                   echo "<p class='card-text temperature-align temperature-margin'>$weather_min_temp</p>";
-
                   echo "</div>";
                   echo "</div>";
               }
@@ -52,8 +74,31 @@ getCityName();
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
                   echo "<h5 class='card-title'>$newDate_2</h5>";
-                  if($weather_description == 'few clouds'){
-                      echo "<img src='https://ssl.gstatic.com/onebox/weather/48/sunny_s_cloudy.png' class='img-style'>";
+                  switch ($weather_description_2) {
+                      case 'few clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/02d.png' class='img-style'>";
+                          break;
+                      case 'scattered clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/03d.png' class='img-style'>";
+                          break;
+                      case 'broken clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'overcast clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'clear sky':
+                          echo "<img src='http://openweathermap.org/img/wn/01d.png' class='img-style'>";
+                          break;
+                      case 'light rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'moderate rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'heavy intensity rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
                   }
                   echo "<p class='card-text temperature-align'>$weather_max_temp_2</p>";
                   echo "<p class='card-text temperature-align temperature-margin'>$weather_min_temp_2</p>";
@@ -66,7 +111,32 @@ getCityName();
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
                   echo "<h5 class='card-title'>$newDate_3</h5>";
-                  echo "<img src='https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png' class='img-style'>";
+                  switch ($weather_description_3) {
+                      case 'few clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/02d.png' class='img-style'>";
+                          break;
+                      case 'scattered clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/03d.png' class='img-style'>";
+                          break;
+                      case 'broken clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'overcast clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'clear sky':
+                          echo "<img src='http://openweathermap.org/img/wn/01d.png' class='img-style'>";
+                          break;
+                      case 'light rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'moderate rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'heavy intensity rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                  }
                   echo "<p class='card-text temperature-align'>$weather_max_temp_3</p>";
                   echo "<p class='card-text temperature-align temperature-margin'>$weather_min_temp_3</p>";
 
@@ -78,7 +148,32 @@ getCityName();
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
                   echo "<h5 class='card-title'>$newDate_4</h5>";
-                  echo "<img src='https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png' class='img-style'>";
+                  switch ($weather_description_4) {
+                      case 'few clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/02d.png' class='img-style'>";
+                          break;
+                      case 'scattered clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/03d.png' class='img-style'>";
+                          break;
+                      case 'broken clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'overcast clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'clear sky':
+                          echo "<img src='http://openweathermap.org/img/wn/01d.png' class='img-style'>";
+                          break;
+                      case 'light rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'moderate rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'heavy intensity rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                  }
                   echo "<p class='card-text temperature-align'>$weather_max_temp_4</p>";
                   echo "<p class='card-text temperature-align temperature-margin'>$weather_min_temp_4</p>";
 
@@ -91,7 +186,32 @@ getCityName();
                   echo "<div class='card card-style'>";
                   echo "<div class='card-body'>";
                   echo "<h5 class='card-title'>$newDate_5</h5>";
-                  echo "<img src='https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png' class='img-style'>";
+                  switch ($weather_description_5) {
+                      case 'few clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/02d.png' class='img-style'>";
+                          break;
+                      case 'scattered clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/03d.png' class='img-style'>";
+                          break;
+                      case 'broken clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'overcast clouds':
+                          echo "<img src='http://openweathermap.org/img/wn/04d.png' class='img-style'>";
+                          break;
+                      case 'clear sky':
+                          echo "<img src='http://openweathermap.org/img/wn/01d.png' class='img-style'>";
+                          break;
+                      case 'light rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'moderate rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                      case 'heavy intensity rain':
+                          echo "<img src='http://openweathermap.org/img/wn/10d.png' class='img-style'>";
+                          break;
+                  }
                   echo "<p class='card-text temperature-align'>$weather_max_temp_5</p>";
                   echo "<p class='card-text temperature-align temperature-margin'>$weather_min_temp_5</p>";
 

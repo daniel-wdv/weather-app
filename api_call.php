@@ -48,9 +48,9 @@ function getCityName (){
 
             $tempInCelcius = (int)($weatherArray['list'][0]['main']['temp'] - 273);
 
-            $maxTempInCelcius = (int)($weatherArray['list'][0]['main']['temp_max'] - 273);
+            $maxTempInCelcius = (int)($weatherArray['list'][0]['main']['temp_max'] - 268);
 
-            $minTempInCelcius = (int)($weatherArray['list'][0]['main']['temp_min'] - 277);
+            $minTempInCelcius = (int)($weatherArray['list'][0]['main']['temp_min'] - 279);
 
             $weather_max_temp = $maxTempInCelcius."&deg;</br>";
 
@@ -75,9 +75,9 @@ function getCityName (){
 
             $tempInCelcius_2 = (int)($weatherArray['list'][8]['main']['temp'] - 273);
 
-            $maxTempInCelcius_2 = (int)($weatherArray['list'][8]['main']['temp_max'] - 273);
+            $maxTempInCelcius_2 = (int)($weatherArray['list'][8]['main']['temp_max'] - 268);
 
-            $minTempInCelcius_2 = (int)($weatherArray['list'][8]['main']['temp_min'] - 278);
+            $minTempInCelcius_2 = (int)($weatherArray['list'][8]['main']['temp_min'] - 279);
 
             $weather_max_temp_2 = $maxTempInCelcius_2."&deg;</br>";
 
@@ -103,9 +103,9 @@ function getCityName (){
 
             $tempInCelcius_3 = (int)($weatherArray['list'][16]['main']['temp'] - 273);
 
-            $maxTempInCelcius_3 = (int)($weatherArray['list'][16]['main']['temp_max'] - 273);
+            $maxTempInCelcius_3 = (int)($weatherArray['list'][16]['main']['temp_max'] - 268);
 
-            $minTempInCelcius_3 = (int)($weatherArray['list'][16]['main']['temp_min'] - 278);
+            $minTempInCelcius_3 = (int)($weatherArray['list'][16]['main']['temp_min'] - 279);
 
             $weather_max_temp_3 = $maxTempInCelcius_3."&deg;</br>";
 
@@ -131,9 +131,9 @@ function getCityName (){
 
             $tempInCelcius_4 = (int)($weatherArray['list'][24]['main']['temp'] - 273);
 
-            $maxTempInCelcius_4 = (int)($weatherArray['list'][24]['main']['temp_max'] - 273);
+            $maxTempInCelcius_4 = (int)($weatherArray['list'][24]['main']['temp_max'] - 268);
 
-            $minTempInCelcius_4 = (int)($weatherArray['list'][24]['main']['temp_min'] - 278);
+            $minTempInCelcius_4 = (int)($weatherArray['list'][24]['main']['temp_min'] - 279);
 
             $weather_max_temp_4 = $maxTempInCelcius_4."&deg;</br>";
 
@@ -161,9 +161,9 @@ function getCityName (){
 
         $tempInCelcius_5 = (int)($weatherArray['list'][32]['main']['temp'] - 273);
 
-        $maxTempInCelcius_5 = (int)($weatherArray['list'][32]['main']['temp_max'] - 273);
+        $maxTempInCelcius_5 = (int)($weatherArray['list'][32]['main']['temp_max'] - 268);
 
-        $minTempInCelcius_5 = (int)($weatherArray['list'][32]['main']['temp_min'] - 278);
+        $minTempInCelcius_5 = (int)($weatherArray['list'][32]['main']['temp_min'] - 279);
 
         $weather_max_temp_5 = $maxTempInCelcius_5."&deg;</br>";
 
